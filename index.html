@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Buscador clientes</h1>
+        <div class="nav-container">
+            <nav id="navegador">
+                <ul class="nav-lista">
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="redes">
+                    <li><a href="#"><img src="2023_Facebook_icon.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="Logo_of_Twitter.svg.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="Instagram_logo_2022.svg.png" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <div id="imagen"><img src="" alt=""></div>
+        <div id="nombre"><p></p></div>
+        <div id="descripcion"><p></p></div>
+        
+        <div id="buscador-container">
+            <input type="text" id="buscador" placeholder="Buscar cliente...">
+            <ul id="resultado"></ul>
+            <div id="añadir"><button id="añadir2"> AÑADIR CLIENTE</button></div>
+        </div>
+
+        <div id="formulario-container" style="display:none;">
+            <form id="formulario">
+                <label for="nombre-input">Nombre:</label>
+                <input type="text" id="nombre-input" >
+                <label for="descripcion-input">Descripción:</label>
+                <input type="text" id="descripcion-input" >
+                <label for="imagen-input">URL de la imagen:</label>
+                <input type="text" id="imagen-input" >
+                <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
